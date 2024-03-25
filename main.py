@@ -28,7 +28,7 @@ def save_note(note):
 
     for item in notes:
         if item["title"] == note.get("title"):
-            print("Заметка с таким заголовком уже существует. Изменяем текст.")
+            print("Заметка с таким заголовком уже существует. Можно изменить текст.")
             delete_note(item["title"])
 
     with open("notes.json", "a") as file:
